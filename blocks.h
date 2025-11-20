@@ -4,6 +4,7 @@ static const Block blocks[] = {
     {"BAT: ", "acpi | awk -F '[ ,%]+' '{print $4 \"%\"}'",      30,                 0},
     {"VOL: ", "pamixer --get-volume-human",                      0,                 10},
     {"",      "date '+%b %d (%a) %H:%M'",                       60,                 0},
+	{"",        "/home/bread/.local/suckless/bin/sb-wifi",      5,                  0},
 };
 
 // sets delimiter between status commands. NULL character ('\0') means no delimiter.
