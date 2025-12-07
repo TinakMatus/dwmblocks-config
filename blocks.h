@@ -12,10 +12,12 @@ static const Block blocks[] = {
     {"",      "date '+%b %d (%a) %H:%M'",                        60,                  0},
 
     // 4. Wi-Fi (Signal 5)
-    {"",      "/home/bread/.local/suckless/bin/sb-wifi",         30,                  5},
+
 
     // 5. Bluetooth (Signal 7) - ADD THIS LINE
     {"",      "/home/bread/.local/suckless/bin/sb-bluetooth",     5,                  7},
+
+	    {"",      "/home/bread/.local/suckless/bin/sb-wifi",         30,                  5},
 };
 
 // sets delimiter between status commands. NULL character ('\0') means no delimiter.
