@@ -15,7 +15,7 @@ static const Block blocks[] = {
 
 
     // 5. Bluetooth (Signal 7) - ADD THIS LINE
-    {"",      "/home/bread/.local/suckless/bin/sb-bluetooth",     5,                  7},
+    {"",      "/home/bread/.local/suckless/bin/sb-bluetooth",     30,                  7},
 
 	    {"",      "/home/bread/.local/suckless/bin/sb-wifi",         30,                  5},
 };
