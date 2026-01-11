@@ -1,15 +1,31 @@
-# dwmblocks
-Modular status bar for dwm written in c.
-# usage
-To use dwmblocks first run 'make' and then install it with 'sudo make install'.
-After that you can put dwmblocks in your xinitrc or other startup script to have it start with dwm.
-# modifying blocks
-The statusbar is made from text output from commandline programs.
-Blocks are added and removed by editing the blocks.h header file.
-By default the blocks.h header file is created the first time you run make which copies the default config from blocks.def.h.
-This is so you can edit your status bar commands and they will not get overwritten in a future update.
-# patches
-Here are some patches to dwmblocks that add features that I either don't want to merge in, or that require a dwm patch to work.
-I do not maintain these but I will take pull requests to update them.
-<br>
-<a href=https://gist.github.com/IGeraGera/e4a5583b91b3eec2e81fdceb44dea717>dwmblocks-statuscmd-b6b0be4.diff</a>
+## dwmblocks - Status Bar for DWM
+
+This is my custom setup for dwmblocks. It handles the information displayed in the top bar of my window manager. I kept it simple so it doesn't distract me but gives me exactly what I need to know about my system.
+
+# How it works
+
+It is useing realtime data from my system and sending it into the DWM status bar. It’s a modular system where I can plug in small scripts to show different info.
+
+* Efficiency: Instead of one massive program dwmblocks just runs my tiny scripts at set intervals
+
+# Applied Patches
+
+I hand-patched this build to add functionality that isnt in the standard version:
+
+* [**statuscmd**](https://dwm.suckless.org/patches/statuscmd/) It makes the status bar interactive.
+
+# My Scripts
+
+I use a mix of standard commands and some small custom scripts:
+
+* Clock: Shows the time
+
+* Volume: Updates instantly when I change the sound.
+
+* Battery: Monitoring my power usage.
+
+* WiFi: Simple script to see my connection.
+
+* Bluetooth: A script to see my Bluetooth connection.
+
+"Simple blocks for a clean system."
